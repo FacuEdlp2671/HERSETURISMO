@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herse Turismo | Viajes y Destinos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Herse Turismo | Tu Próximo Destino</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <div class="container nav-container">
-            <div class="logo">
-                <img src="logo.png" alt="Herse Turismo Logo">
-            </div>
+            <div class="logo"><img src="logo.png" alt="Herse Turismo"></div>
             <nav>
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#destacados">Destacados</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="https://wa.me/549221XXXXXXX" class="btn-nav">Contacto</a></li>
+                    <li><a href="#paquetes">Paquetes</a></li>
+                    <li><a href="#" class="btn-nav">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,11 +27,10 @@
         <div class="overlay"></div>
         <div class="hero-content">
             <h1>Tu próximo viaje empieza acá</h1>
-            
             <div class="search-box">
                 <div class="input-group">
                     <label>¿A dónde querés ir?</label>
-                    <input type="text" placeholder="Ej: Brasil, Caribe, Europa...">
+                    <input type="text" placeholder="Ej: Brasil, Europa...">
                 </div>
                 <div class="input-group">
                     <label>Fecha de viaje</label>
@@ -41,120 +38,125 @@
                 </div>
                 <button class="btn-search">BUSCAR</button>
             </div>
-
         </div>
     </section>
 
     <section id="paquetes" class="container section-padding">
-        <h2 class="section-title">Paquetes Destacados</h2>
-        
-        <div class="grid-viajes">
-            
-            <div class="card">
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80" alt="Caribe">
-                    <span class="tag">All Inclusive</span>
-                </div>
-                <div class="card-body">
-                    <span class="salida">Salida: 15 Mayo 2026</span>
-                    <h3>Punta Cana Relax</h3>
-                    
-                    <div class="servicios">
-                        <span>✈️ Aéreos</span>
-                        <span>🏨 Hotel 5*</span>
-                        <span>🍹 Bebidas</span>
-                    </div>
+        <h2 class="section-title">Nuestros Destinos</h2>
 
-                    <div class="precio-container">
-                        <p>Precio final por persona</p>
-                        <div class="precio">
-                            <span class="moneda">USD</span>
-                            <span class="monto">1.450</span>
-                        </div>
-                    </div>
-
-                    <a href="#" class="btn-card">Ver Detalle</a>
+        <div class="region-container">
+            <h3 class="region-title">🇦🇷 Argentina</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800"><span class="tag">Nacional</span></div><div class="card-body"><span class="salida">Todo el año</span><h3>Iguazú</h3><div class="precio"><span>$</span>350.000</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1516939884455-1445c8652f83?w=800"><span class="tag">Nacional</span></div><div class="card-body"><span class="salida">Otoño 2026</span><h3>Mendoza</h3><div class="precio"><span>$</span>420.000</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1506466010722-395ee2bef877?w=800"><span class="tag">Nacional</span></div><div class="card-body"><span class="salida">Mayo 2026</span><h3>Salta</h3><div class="precio"><span>$</span>390.000</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1510134015096-107074320958?w=800"><span class="tag">Nacional</span></div><div class="card-body"><span class="salida">Invierno 2026</span><h3>Calafate</h3><div class="precio"><span>$</span>580.000</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1596701062351-be5f8a400bd2?w=800"><span class="tag">Nacional</span></div><div class="card-body"><span class="salida">Junio 2026</span><h3>Ushuaia</h3><div class="precio"><span>$</span>510.000</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
                 </div>
+                <div class="swiper-button-next"></div><div class="swiper-button-prev"></div>
             </div>
+        </div>
 
-            <div class="card">
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Europa">
-                    <span class="tag">Cupos Limitados</span>
+        <div class="region-container">
+            <h3 class="region-title">🌎 Sudamérica</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800"><span class="tag">Brasil</span></div><div class="card-body"><span class="salida">Enero 2027</span><h3>Río</h3><div class="precio"><span>USD</span>950</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1533681478291-0ad0c69d2d46?w=800"><span class="tag">Colombia</span></div><div class="card-body"><span class="salida">Noviembre 2026</span><h3>Eje Cafetero</h3><div class="precio"><span>USD</span>1.250</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1544158428-f6044737d979?w=800"><span class="tag">Chile</span></div><div class="card-body"><span class="salida">Agosto 2026</span><h3>Santiago</h3><div class="precio"><span>USD</span>780</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1581447100512-675839995c37?w=800"><span class="tag">Perú</span></div><div class="card-body"><span class="salida">Septiembre 2026</span><h3>Lima</h3><div class="precio"><span>USD</span>1.050</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1563810139151-698e4d291931?w=800"><span class="tag">Uruguay</span></div><div class="card-body"><span class="salida">Febrero 2027</span><h3>Punta del Este</h3><div class="precio"><span>USD</span>890</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
                 </div>
-                <div class="card-body">
-                    <span class="salida">Salida: 10 Septiembre 2026</span>
-                    <h3>Europa Clásica</h3>
-                    
-                    <div class="servicios">
-                        <span>✈️ Aéreos</span>
-                        <span>🚆 Trenes</span>
-                        <span>🥐 Desayuno</span>
-                    </div>
-
-                    <div class="precio-container">
-                        <p>Precio final por persona</p>
-                        <div class="precio">
-                            <span class="moneda">USD</span>
-                            <span class="monto">2.800</span>
-                        </div>
-                    </div>
-
-                    <a href="#" class="btn-card">Ver Detalle</a>
-                </div>
+                <div class="swiper-button-next"></div><div class="swiper-button-prev"></div>
             </div>
+        </div>
 
-            <div class="card">
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1612278675615-7b093b07772d?auto=format&fit=crop&w=800&q=80" alt="Bariloche">
-                    <span class="tag">Nacional</span>
+        <div class="region-container">
+            <h3 class="region-title">🗽 Estados Unidos</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1542259009477-d625272157b7?w=800"><span class="tag">EEUU</span></div><div class="card-body"><span class="salida">Julio 2026</span><h3>Orlando</h3><div class="precio"><span>USD</span>2.400</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800"><span class="tag">EEUU</span></div><div class="card-body"><span class="salida">Octubre 2026</span><h3>New York</h3><div class="precio"><span>USD</span>2.100</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?w=800"><span class="tag">EEUU</span></div><div class="card-body"><span class="salida">Diciembre 2026</span><h3>Miami</h3><div class="precio"><span>USD</span>1.850</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1506159904226-d42052af01f7?w=800"><span class="tag">EEUU</span></div><div class="card-body"><span class="salida">Septiembre 2026</span><h3>Las Vegas</h3><div class="precio"><span>USD</span>1.950</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800"><span class="tag">EEUU</span></div><div class="card-body"><span class="salida">Mayo 2026</span><h3>California</h3><div class="precio"><span>USD</span>2.300</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
                 </div>
-                <div class="card-body">
-                    <span class="salida">Salida: Julio 2026</span>
-                    <h3>Bariloche Nieve</h3>
-                    
-                    <div class="servicios">
-                        <span>✈️ Aéreos</span>
-                        <span>🏨 Hotel</span>
-                        <span>⛷️ Pases</span>
-                    </div>
-
-                    <div class="precio-container">
-                        <p>Precio final por persona</p>
-                        <div class="precio">
-                            <span class="moneda">$</span>
-                            <span class="monto">650.000</span>
-                        </div>
-                    </div>
-
-                    <a href="#" class="btn-card">Ver Detalle</a>
-                </div>
+                <div class="swiper-button-next"></div><div class="swiper-button-prev"></div>
             </div>
+        </div>
 
+        <div class="region-container">
+            <h3 class="region-title">🏰 Europa</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800"><span class="tag">Europa</span></div><div class="card-body"><span class="salida">Mayo 2026</span><h3>Italia</h3><div class="precio"><span>USD</span>3.100</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1543783232-1785980189d9?w=800"><span class="tag">Europa</span></div><div class="card-body"><span class="salida">Abril 2026</span><h3>España</h3><div class="precio"><span>USD</span>2.900</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800"><span class="tag">Europa</span></div><div class="card-body"><span class="salida">Junio 2026</span><h3>París</h3><div class="precio"><span>USD</span>3.050</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800"><span class="tag">Europa</span></div><div class="card-body"><span class="salida">Agosto 2026</span><h3>Londres</h3><div class="precio"><span>USD</span>3.400</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800"><span class="tag">Europa</span></div><div class="card-body"><span class="salida">Septiembre 2026</span><h3>Alemania</h3><div class="precio"><span>USD</span>3.250</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                </div>
+                <div class="swiper-button-next"></div><div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="region-container">
+            <h3 class="region-title">⛩️ Exóticos</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800"><span class="tag">Asia</span></div><div class="card-body"><span class="salida">Noviembre 2026</span><h3>Japón</h3><div class="precio"><span>USD</span>4.800</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800"><span class="tag">Asia</span></div><div class="card-body"><span class="salida">Enero 2027</span><h3>Tailandia</h3><div class="precio"><span>USD</span>3.600</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?w=800"><span class="tag">África</span></div><div class="card-body"><span class="salida">Octubre 2026</span><h3>Egipto</h3><div class="precio"><span>USD</span>3.200</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800"><span class="tag">Europa/Asia</span></div><div class="card-body"><span class="salida">Mayo 2026</span><h3>Turquía</h3><div class="precio"><span>USD</span>3.100</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=800"><span class="tag">África</span></div><div class="card-body"><span class="salida">Septiembre 2026</span><h3>Marruecos</h3><div class="precio"><span>USD</span>2.800</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                </div>
+                <div class="swiper-button-next"></div><div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="region-container">
+            <h3 class="region-title">🍹 Caribe</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=800"><span class="tag">México</span></div><div class="card-body"><span class="salida">Febrero 2027</span><h3>Cancún</h3><div class="precio"><span>USD</span>1.950</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800"><span class="tag">Aruba</span></div><div class="card-body"><span class="salida">Marzo 2027</span><h3>Aruba</h3><div class="precio"><span>USD</span>2.200</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1500051638674-bb996a0c271b?w=800"><span class="tag">Cuba</span></div><div class="card-body"><span class="salida">Mayo 2026</span><h3>Varadero</h3><div class="precio"><span>USD</span>1.750</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800"><span class="tag">México</span></div><div class="card-body"><span class="salida">Noviembre 2026</span><h3>Playa del Carmen</h3><div class="precio"><span>USD</span>1.800</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                    <div class="swiper-slide"><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=800"><span class="tag">Jamaica</span></div><div class="card-body"><span class="salida">Enero 2027</span><h3>Jamaica</h3><div class="precio"><span>USD</span>2.150</div><a href="#" class="btn-card">Ver Detalle</a></div></div></div>
+                </div>
+                <div class="swiper-button-next"></div><div class="swiper-button-prev"></div>
+            </div>
         </div>
     </section>
 
-
-    <footer>
-        <p>&copy; 2026 Herse Turismo - Todos los derechos reservados.</p>
-    </footer>
+    <footer><p>&copy; 2026 Herse Turismo - Todos los derechos reservados.</p></footer>
 
     <script type="text/javascript">
-  (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '698162cee88e170404c3aa4c' },
-          url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production',
-          voice: {
-            url: "https://runtime-api.voiceflow.com"
-          }
-        });
-      }
-      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-  })(document, 'script');
-</script>
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '698162cee88e170404c3aa4c' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production'
+            });
+          };
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            breakpoints: {
+                320: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+    </script>
 </body>
 </html>
